@@ -1,0 +1,358 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  color: white;
+  color: white;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: white;
+  color: white;
+  margin-left: 20px;
+}
+
+h4 {
+  color: white;
+  color: white;
+  margin-left: 20px;
+}
+
+p {
+  color: white;
+  margin: 2%;
+}
+
+body {
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo-principal {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  min-height: 90px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.1s;
+}
+
+nav :hover {
+  color: rgba(226, 0, 0, 0.884);
+}
+
+@keyframes cambio {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+main {
+  animation-name: cambio;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.contenedor-novedad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+.novedades {
+  position: relative;
+  justify-content: center;
+  max-width: 100px;
+  margin: 0%;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.novedades :hover {
+  transform: scale(1.1);
+}
+
+.contenedorescuadrones {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.escuadron {
+  position: relative;
+  display: grid;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.escuadron .img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.info-escuadron p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.contenedorpersonajes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid: 100px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.personajes {
+  position: relative;
+  max-width: 100px;
+  margin: 0%;
+  color: white;
+}
+
+.t2 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contenedor-musica {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contenedor-openings {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.opening img {
+  width: 70%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
+.opening :hover {
+  filter: brightness(120%);
+  transition: background-color 1s;
+}
+
+@media (max-width: 768px) {
+  .contenedor-openings {
+    padding: 20px;
+  }
+  .opening img {
+    margin-bottom: 20px;
+  }
+}
+.mangaka-contenedor img {
+  max-width: 40%;
+  height: auto;
+  margin-left: 0%;
+  float: left;
+  padding-right: 5%;
+  padding-left: 1%;
+  margin-bottom: 10px;
+}
+
+.mangaka-contenedor p {
+  width: 90%;
+  padding-bottom: 10px;
+}
+
+.contenedor-mangas {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.manga {
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.manga :hover {
+  transform: scale(1.1);
+}
+
+.manga1 {
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.manga1 :hover {
+  transform: scale(1.1);
+}
+
+.manga img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.manga1 img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.contenedor-titanes {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.titanes {
+  max-width: 30%;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  transition: transform 0.3s;
+}
+
+.titanes :hover {
+  transform: scale(1.1);
+}
+
+.titanes img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.anormal img {
+  width: 5%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contenedor-murallas {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.murallas {
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  max-width: 30%;
+  transition: transform 0.3s;
+}
+
+.murallas :hover {
+  transform: scale(1.1);
+}
+
+.murallas img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  bottom: 0;
+}
+
+.text-footer {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-elementos {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
